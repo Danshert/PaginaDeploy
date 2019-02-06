@@ -6,11 +6,14 @@ python:
 install:
   - pip install django
 
-before script:
+before_script:
   - echo "Antes de ejecutar un script"
 
 script: 
   - echo "Hola Mundo"
+  - pwd
+  - ls -la
+  - date 
 
 notification: 
 email: false
